@@ -1,8 +1,3 @@
-/* TODO: get images for work section
-put images in
-align headings
-hover effect using :hover and opacity*/
-
 :root {
   --box-color: rgb(158, 201, 204);
   --nav-bg: rgb(50, 52, 60);
@@ -25,9 +20,10 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 10rem;
+  margin-left: 15rem;
   margin-bottom: 5rem;
-  gap: 2rem;
+  gap: 0.5rem;
+  justify-items: center;
 }
 
 /* Navbar */
@@ -100,6 +96,8 @@ main {
   padding-right: 1rem;
 }
 
+/* About Me Section */
+
 p {
   padding: 2rem;
   line-height: 1.3;
@@ -113,6 +111,19 @@ p::first-letter {
 
 a img {
   border: 5px solid var(--box-color);
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.work-item-1 img {
+  height: 400px;
+  width: 500px;
+}
+
+.work-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .work-item {
@@ -139,14 +150,121 @@ a img {
   font-family: "Roboto", sans-serif;
 }
 
+.work-item-headings-1 {
+  top: 370px;
+}
+
 /* Contact Me Section */
+
+#contact {
+  padding-bottom: 2rem;
+}
 
 .contact-item {
   color: var(--nav-bg);
   text-decoration: underline;
-  padding-right: 4rem;
+  padding-right: 6rem;
 }
 
 .contact-item a {
   color: var(--nav-bg);
+}
+
+/* Mobile Devices */
+
+@media screen and (max-width: 768px) {
+  /* Main Heading and Navbar */
+
+  .main-heading {
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+
+  /* Hero */
+
+  .hero-subtitle {
+    font-size: 16px;
+    left: 3vw;
+  }
+
+  /* About Me */
+
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .body-header {
+    font-size: 1rem;
+    border-bottom: 2px solid var(--nav-bg);
+    border-right: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    padding: 1rem;
+    line-height: 1.3;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+  }
+
+  p::first-letter {
+    font-size: 2rem;
+  }
+
+  /* Work */
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  a img {
+    border: 5px solid var(--box-color);
+    height: 100px;
+    width: 125px;
+    object-fit: cover;
+  }
+
+  .work-item-1 img {
+    height: 200px;
+    width: 250px;
+  }
+
+  .work-item-headings {
+    padding: 0.2rem;
+    width: fit-content;
+    position: relative;
+    top: 90px;
+    left: 10px;
+  }
+
+  .work-item-headings h3,
+  h6 {
+    font-size: 10px;
+  }
+
+  .work-item-headings-1 {
+    top: 190px;
+  }
+
+  #contact {
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .contact-item {
+    padding: 1rem;
+  }
 }
