@@ -31,7 +31,7 @@ body {
 #avatar {
   height: 100px;
   position: relative;
-  left: 250px;
+  left: 240px;
 }
 
 .navbar {
@@ -74,7 +74,7 @@ body {
   z-index: 2;
   position: relative;
   bottom: 4rem;
-  left: 28vw;
+  left: 20vw;
   margin-right: 2rem;
   padding: 0.5rem;
   background-color: var(--box-color);
