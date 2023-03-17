@@ -82,6 +82,7 @@ body {
   width: fit-content;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
+  text-align: center;
 }
 
 .hero-you {
