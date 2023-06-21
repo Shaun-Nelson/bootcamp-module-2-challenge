@@ -35,7 +35,7 @@ Hero image: https://www.wallpaperflare.com/material-design-stripes-digital-art-l
 
 DJ image: https://www.fiverr.com/resources/guides/music-audio/dj-drops-learn-to-make-your-own
 
-Joke Generator image: https://www.backstage.com/magazine/article/7-lessons-from-standup-comedy-to-help-you-get-through-life-68444/
+BARFLY image: Matthew Millard
 
 Sunrise/Sunset image: https://www.timeanddate.com/sun/
 
